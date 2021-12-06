@@ -99,8 +99,13 @@ func main() {
 
 	if result, err := part1(values); err == nil {
 		fmt.Println("Part 1:", result)
+	} else {
+		log.Fatal(err)
 	}
+
 	if result, err := part2(values); err == nil {
 		fmt.Println("Part 2:", result)
+	} else {
+		log.Fatal(err)
 	}
 }

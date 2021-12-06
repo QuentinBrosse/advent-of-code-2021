@@ -79,9 +79,15 @@ func main() {
 
 	if value, err := part1(file); err == nil {
 		fmt.Println("Part 1:", value)
+	} else {
+		log.Fatal(err)
 	}
+
 	file.Seek(0, 0)
+
 	if value, err := part2(file); err == nil {
 		fmt.Println("Part 2:", value)
+	} else {
+		log.Fatal(err)
 	}
 }
